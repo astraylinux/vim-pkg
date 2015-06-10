@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/etc/vsftpd'
+let g:netrw_dirhist_2='/root/bin/0/man'
+let g:netrw_dirhist_3='/root/program/domain/result'
+let g:netrw_dirhist_4='/root/program/domain/result/backup'
+let g:netrw_dirhist_5='/usr/lib64/python2.6/xml/etree'
+let g:netrw_dirhist_6='/home/hailun/git/backup/k-vim'
