@@ -1,86 +1,0 @@
-10
-
-dir
-53
-svn://175.43.16.76/bin/vim/.vim
-svn://175.43.16.76
-
-
-
-2014-01-27T10:14:21.472501Z
-35
-root
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-d92f811c-d936-4daf-b800-174cf0e1a6a8
-
-colors
-dir
-
-indent
-dir
-
-php-doc.vim
-file
-
-
-
-
-2014-01-27T10:21:14.000000Z
-41c58d30bb54b27deb8449a8d4e5c2cd
-2014-01-27T10:14:21.472501Z
-35
-root
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-15997
-
-doc
-dir
-
-nerdtree_plugin
-dir
-
-syntax
-dir
-
-autoload
-dir
-
-ftplugin
-dir
-
-plugin
-dir
-
