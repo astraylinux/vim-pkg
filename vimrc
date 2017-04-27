@@ -109,8 +109,8 @@ vnoremap > >gv
 " NOT SUPPORT
 " fold
 " set foldenable
-" set foldmethod=indent
-" set foldlevel=99
+set foldmethod=indent
+set foldlevel=0
 
 " encoding
 set encoding=utf-8
@@ -264,3 +264,5 @@ nnoremap <silent> <leader>tt :execute 'tabnext ' . g:last_active_tab<cr>
 vnoremap <silent> <leader>tt :execute 'tabnext ' . g:last_active_tab<cr>
 autocmd TabLeave * let g:last_active_tab = tabpagenr()
 
+
+set tags=./tags,./TAGS,tags;~,TAGS;~
