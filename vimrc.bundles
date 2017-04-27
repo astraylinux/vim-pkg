@@ -12,6 +12,7 @@ call vundle#rc()
 Bundle 'tomasr/molokai'
 let g:molokai_original = 1  " monokai原始背景色
 
+Bundle 'altercation/Solarized'
 
 " ################### 基础 ######################
  " 多语言语法检查

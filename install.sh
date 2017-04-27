@@ -34,4 +34,9 @@ then
     mkdir -p /tmp/vimundo
 fi
 
+#install vundle.vim for vim-plug
+#echo "install vundle for vim-plug, command: PlugIn....."
+#cd $HOME/.vim/bundle
+#git clone https://github.com/VundleVim/Vundle.vim.git
+
 echo "Install Done!"

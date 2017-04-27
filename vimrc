@@ -142,7 +142,9 @@ endif
 " theme
 set background=dark
 set t_Co=256
+"set termguicolors
 colorscheme molokai
+"colorscheme solarized
 
 hi! link SignColumn   LineNr
 hi! link ShowMarksHLl DiffAdd
