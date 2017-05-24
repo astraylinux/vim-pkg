@@ -9,7 +9,6 @@
 " Sections:
 " Desc: simple vim config for server, some moveable plugin
 "==========================================
-
 " leader
 let mapleader = ','
 let g:mapleader = ','
@@ -23,6 +22,10 @@ set helplang=cn
 " install Vundle bundles
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
+endif
+
+if filereadable(expand("~/.syntax.vim"))
+  source ~/.syntax.vim
 endif
 
 " history : how many lines of history VIM has to remember
@@ -93,7 +96,7 @@ set smartcase                   " no ignorecase if Uppercase char present
 noremap <silent><leader>/ :nohls<CR>
 
 " tab
-set noexpandtab                   " expand tabs to spaces
+set expandtab                   " expand tabs to spaces
 set smarttab
 set shiftround
 
@@ -110,7 +113,7 @@ vnoremap > >gv
 " fold
 " set foldenable
 set foldmethod=indent
-set foldlevel=0
+set foldlevel=1
 
 " encoding
 set encoding=utf-8
@@ -155,8 +158,8 @@ set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\
 set laststatus=2   " Always show the status line - use 2 lines for the status bar
 
 " specific language
-autocmd FileType python set tabstop=4 shiftwidth=4 noexpandtab ai
-autocmd FileType ruby set tabstop=2 shiftwidth=2 softtabstop=2 noexpandtab ai
+autocmd FileType python set tabstop=4 shiftwidth=4 expandtab ai
+autocmd FileType ruby set tabstop=2 shiftwidth=2 softtabstop=2 expandtab ai
 
 autocmd BufNewFile *.sh,*.py exec ":call AutoSetFileHead()"
 function! AutoSetFileHead()
