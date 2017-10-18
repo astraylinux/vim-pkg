@@ -24,8 +24,8 @@ if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
 
-if filereadable(expand("~/.syntax.vim"))
-  source ~/.syntax.vim
+if filereadable(expand("~/.vim/syntax.vim"))
+  source ~/.vim/syntax.vim
 endif
 
 " history : how many lines of history VIM has to remember

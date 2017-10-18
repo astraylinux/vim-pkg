@@ -39,4 +39,9 @@ fi
 #cd $HOME/.vim/bundle
 #git clone https://github.com/VundleVim/Vundle.vim.git
 
+yum -y install pylint
+cp ./pylintrc /etc/
+
 echo "Install Done!"
+
+
