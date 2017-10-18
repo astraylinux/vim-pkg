@@ -1,0 +1,18 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3772
+
+Rainbow colors for parentheses, based on rainbow_parenthsis.vim of which there are multiple versions by Martin Krischik, John Gilmore, Luc Hermitte, and Steve Losh.
+
+This version uses significantly less code than the older ones (~80% less) and has new options to make it easier to change the colors and the parentheses depth.
+
+Usage:
+Run :RainbowParenthesesToggle to toggle it on/off.
+
+Highlight different bracket types:
+    :RainbowParenthesesLoadRound " for ( ), default when toggling
+    :RainbowParenthesesLoadSquare " for [ ]
+    :RainbowParenthesesLoadBraces " for { }
+    :RainbowParenthesesLoadChevrons " for < >
+
+Git repo: https://github.com/kien/rainbow_parentheses.vim
+
+Note: may not work for some languages (when syntax's already enabled) because of the limitation the `:syntax region` command.
