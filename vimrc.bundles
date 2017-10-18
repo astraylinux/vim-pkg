@@ -6,6 +6,67 @@ filetype off " required! turn off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+" ################ git #######################
+" git.  git操作还是习惯命令行,vim里面处理简单diff编辑操作
+" :Gdiff  :Gstatus :Gvsplit
+Bundle 'tpope/vim-fugitive'
+nnoremap <leader>ge :Gdiff<CR>
+" not ready to open
+" <leader>gb maps to :Gblame<CR>
+" <leader>gs maps to :Gstatus<CR>
+" <leader>gd maps to :Gdiff<CR>  和现有冲突
+" <leader>gl maps to :Glog<CR>
+" <leader>gc maps to :Gcommit<CR>
+" <leader>gp maps to :Git push<CR>
+
+" 同git diff,实时展示文件中修改的行
+" 只是不喜欢除了行号多一列, 默认关闭,gs时打开
+Bundle 'airblade/vim-gitgutter'
+let g:gitgutter_map_keys = 0
+let g:gitgutter_enabled = 0
+let g:gitgutter_highlight_lines = 1
+nnoremap <leader>gs :GitGutterToggle<CR>
+
+" edit history, 可以查看回到某个历史状态
+Bundle 'sjl/gundo.vim'
+noremap <leader>h :GundoToggle<CR>
+
+
+" ################# 显示增强 #########################
+" 状态栏增强展示
+" 新的airline配置
+Bundle 'bling/vim-airline'
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_left_sep = '▶'
+let g:airline_left_alt_sep = '❯'
+let g:airline_right_sep = '◀'
+let g:airline_right_alt_sep = '❮'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+" 是否打开tabline
+" let g:airline#extensions#tabline#enabled = 1
+
+" 括号显示增加
+Bundle 'kien/rainbow_parentheses.vim'
+" 不加入这行, 防止黑色括号出现, 很难识别
+" \ ['black',       'SeaGreen3'],
+let g:rbpt_colorpairs = [
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['brown',       'RoyalBlue3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ]
+
+let g:rbpt_max = 16
+let g:rbpt_loadcmd_toggle = 0
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
 
 " ####################  主题 ########################
 " molokai
