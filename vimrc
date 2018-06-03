@@ -113,7 +113,7 @@ vnoremap > >gv
 " fold
 " set foldenable
 set foldmethod=indent
-set foldlevel=1
+set foldlevel=99
 
 " encoding
 set encoding=utf-8
