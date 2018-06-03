@@ -271,4 +271,4 @@ autocmd TabLeave * let g:last_active_tab = tabpagenr()
 set tags=./tags,./TAGS,tags;~,TAGS;~
 
 set mouse=a
-namp <C-b> <C-v>
+nmap <C-b> <C-v>
